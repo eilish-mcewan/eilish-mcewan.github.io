@@ -7,7 +7,7 @@
       body {
         color: rgb(47, 54, 18);
         font-family: Georgia, 'Times New Roman', Times, serif;
-        text-align: center;
+        text-align: right;
         background-image: url(https://www.shutterstock.com/shutterstock/videos/3191083/thumb/1.jpg);
         background-size: cover;
       }
@@ -33,13 +33,12 @@
       h1 {
         font-family: Georgia, 'Times New Roman', Times, serif;
         color: rgb(57, 96, 48);
-        text-align: center;
-        background-position: top center;
+        background-position: top right;
         background-color: rgb(255, 255, 255);
-        display: inline-block;
-        padding: 6px;
-        margin-bottom: 40px;
-        margin-top: 50px;
+        display: inline;
+        padding: 10px;
+        position: sticky;
+        top: 5px;
       }
       p {
         font-family: Georgia, 'Times New Roman', Times, serif;
@@ -47,7 +46,6 @@
         text-align: center;
         background-position: top center;
         background-color: rgb(255, 255, 255);
-        display: inline-block;
         padding: 6px;
       }
       .grid-container {
@@ -69,6 +67,7 @@
       <style>
         nav{
           position: fixed;
+          z-index: 2;
         }
       </style>
     </nav>
@@ -96,10 +95,10 @@
     <style>
       footer a img {
         position: fixed;
-        position: bottom left;
+        left: 8px;
+        top: 90%;
         bottom: 0;
         width: 10%;
-        
         padding: 10px;
       }
     </style>
