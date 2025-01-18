@@ -88,39 +88,48 @@
 
 
     <!--Main Content + Grid-->
-    <div class="grid-container">
+    <div class="flex-container">
       <style>
-        .grid-container {
+        .flex-container {
           display: grid;
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(2, 1fr);
           grid-gap: 5%;
           padding: 5%;
-          margin-top: 5%;
+          margin-top: 0%;
         }
-        .grid-item {
-          margin-top: 50%;
-          background-color: rgba(255, 255, 255, 0.8);
+        .flex-item {
+          margin-top: 30%;
+          background-color: rgb(255, 255, 255);
           text-align: center;
-          padding: 20px;
-          font-size: 50%;
+          padding: 40px;
+          font-size: 80%;
         }
-      </style>
-    <break></break>
-    <p>
-      I'm writing a bunch of words here so that the website looks cool. I should
-      probably be using that Lauren Ipsum text to do this but who cares because
-      are you really still reading? I'm excited for dinner tonight, we're having
-      nshima and I hope my housemates let me torrent Gladiator 2 onto the living
-      room TV. I made them watch The Substance last night and it was good, worth
-      the hype tbh.
-    </p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque blandit dictum nunc nec euismod. Quisque dolor diam, condimentum non faucibus at, tincidunt vel nisl. Etiam vitae dui enim. Curabitur finibus sagittis erat, eu ullamcorper nulla sollicitudin sed. In ac dictum erat. Praesent libero urna, faucibus at nisl sed, blandit scelerisque magna. Fusce a nibh urna. Sed hendrerit congue nunc eu cursus. Sed et mattis metus, vel facilisis nunc. Aenean non enim sit amet nunc vestibulum lacini Sed eget elementum neque. Donec sed neque metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec tincidunt a elit et ornare. Duis id nisl vestibulum risus molestie commodo in sed magna. In sagittis luctus fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non nisl ut diam tempus tempor. Ut dapibus id purus id commodo. In tempor, risus vitae semper imperdiet, odio augue laoreet diam, ut tempus lorem lectus at neque. Sed at risus porttitor, feugiat enim sagittis, commodo arcu. Nam dictum eget ipsum sed elementum. Aliquam eu elit diam. Integer vel tincidunt mauris.</p>
-    <p>And another one</p>
-    <p>And another one but with a bit more writing and some more writing lalalalala</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque blandit dictum nunc nec euismod. Quisque dolor diam, condimentum non faucibus at, tincidunt vel nisl. Etiam vitae dui enim. Curabitur finibus sagittis erat, eu ullamcorper nulla sollicitudin sed. In ac dictum erat. Praesent libero urna, faucibus at nisl sed, blandit scelerisque magna. Fusce a nibh urna. Sed hendrerit congue nunc eu cursus. Sed et mattis metus, vel facilisis nunc. Aenean non enim sit amet nunc vestibulum lacini
-      Sed eget elementum neque. Donec sed neque metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec tincidunt a elit et ornare. Duis id nisl vestibulum risus molestie commodo in sed magna. In sagittis luctus fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-      Quisque non nisl ut diam tempus tempor. Ut dapibus id purus id commodo. In tempor, risus vitae semper imperdiet, odio augue laoreet diam, ut tempus lorem lectus at neque. Sed at risus porttitor, feugiat enim sagittis, commodo arcu. Nam dictum eget ipsum sed elementum. Aliquam eu elit diam. Integer vel tincidunt mauris.</p>
-   
+    @media (max-width: 768px) {
+      .flex-item {
+        flex: 1 1 calc(50% - 20px); 
+    }
+    @media (max-width: 480px) {
+      .flex-item {
+        flex: 1 1 100%; 
+      }
+      </style></div>
+
+
+    <div class="flex-container">
+      <div class="flex-item">
+        I'm writing a bunch of words here so that the website looks cool. I should
+        probably be using that Lauren Ipsum text to do this but who cares because
+        are you really still reading? I'm excited for dinner tonight, we're having
+        nshima and I hope my housemates let me torrent Gladiator 2 onto the living
+        room TV. I made them watch The Substance last night and it was good, worth
+        the hype tbh.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque blandit dictum nunc nec euismod. Quisque dolor diam, condimentum non faucibus at, tincidunt vel nisl. Etiam vitae dui enim. Curabitur finibus sagittis erat, eu ullamcorper nulla sollicitudin sed. In ac dictum erat. Praesent libero urna, faucibus at nisl sed, blandit scelerisque magna. Fusce a nibh urna. Sed hendrerit congue nunc eu cursus. Sed et mattis metus, vel facilisis nunc. Aenean non enim sit amet nunc vestibulum lacini Sed eget elementum neque. Donec sed neque metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec tincidunt a elit et ornare. Duis id nisl vestibulum risus molestie commodo in sed magna. In sagittis luctus fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non nisl ut diam tempus tempor. Ut dapibus id purus id commodo. In tempor, risus vitae semper imperdiet, odio augue laoreet diam, ut tempus lorem lectus at neque. Sed at risus porttitor, feugiat enim sagittis, commodo arcu. Nam dictum eget ipsum sed elementum. Aliquam eu elit diam. Integer vel tincidunt mauris.</div>	
+        <div class="flex-item">And another one</div>
+        <div class="flex-item">And another one but with a bit more writing and some more writing lalalalala</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque blandit dictum nunc nec euismod. Quisque dolor diam, condimentum non faucibus at, tincidunt vel nisl. Etiam vitae dui enim. Curabitur finibus sagittis erat, eu ullamcorper nulla sollicitudin sed. In ac dictum erat. Praesent libero urna, faucibus at nisl sed, blandit scelerisque magna. Fusce a nibh urna. Sed hendrerit congue nunc eu cursus. Sed et mattis metus, vel facilisis nunc. Aenean non enim sit amet nunc vestibulum lacini
+        Sed eget elementum neque. Donec sed neque metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec tincidunt a elit et ornare. Duis id nisl vestibulum risus molestie commodo in sed magna. In sagittis luctus fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Quisque non nisl ut diam tempus tempor. Ut dapibus id purus id commodo. In tempor, risus vitae semper imperdiet, odio augue laoreet diam, ut tempus lorem lectus at neque. Sed at risus porttitor, feugiat enim sagittis, commodo arcu. Nam dictum eget ipsum sed elementum. Aliquam eu elit diam. Integer vel tincidunt mauris.</div>
+      </div>
    <!-- Footer Back To Top Arrow -->
     <footer>
     <a href="#top"><img src="https://previews.123rf.com/images/saphatthachat/saphatthachat1809/saphatthachat180900046/110272342-vector-pixel-art-arrow-raise-isolated-cartoon.jpg"><style></style></a>
