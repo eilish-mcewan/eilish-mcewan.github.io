@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
     <title>Eilish's Blog</title>
     <style>
       body {
@@ -13,7 +13,8 @@
       }
       nav {
         background-color: rgb(255, 255, 255);
-        padding: 10px;
+        padding: 8px;
+        border-radius: 440%;
       }
       nav ul {
         list-style-type: none;
@@ -36,9 +37,9 @@
         background-position: top right;
         background-color: rgb(255, 255, 255);
         display: inline;
-        padding: 10px;
-        position: sticky;
-        top: 5px;
+        padding: 1px;
+        z-index: 2;
+        border-radius: 45%;
       }
       p {
         font-family: Georgia, 'Times New Roman', Times, serif;
@@ -47,6 +48,7 @@
         background-position: top center;
         background-color: rgb(255, 255, 255);
         padding: 6px;
+        border-radius: 0%;
       }
       .grid-container {
       display: grid;
@@ -59,7 +61,16 @@
   <body>
     <body id="top">
 
-      
+      <h1>Eilish's Blog <style>
+        h1 {
+          position: fixed;
+          top: 2%;
+          left: 1%;
+          background-color: rgb(255, 255, 255);
+          padding: 8px;
+        }
+      </style></h1>
+
     <!-- Navigation bar -->
     <nav>
       <ul>
@@ -69,16 +80,32 @@
       <style>
         nav{
           position: fixed;
-          z-index: 2;
+          top: 1%;
+
         }
       </style>
     </nav>
 
-    <h1>Eilish's Blog</h1>
-
 
     <!--Main Content + Grid-->
     <div class="grid-container">
+      <style>
+        .grid-container {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 5%;
+          padding: 5%;
+          margin-top: 5%;
+        }
+        .grid-item {
+          margin-top: 50%;
+          background-color: rgba(255, 255, 255, 0.8);
+          text-align: center;
+          padding: 20px;
+          font-size: 50%;
+        }
+      </style>
+    <break></break>
     <p>
       I'm writing a bunch of words here so that the website looks cool. I should
       probably be using that Lauren Ipsum text to do this but who cares because
@@ -87,13 +114,12 @@
       room TV. I made them watch The Substance last night and it was good, worth
       the hype tbh.
     </p>
-    <p>Look here's another box <img src="https://img.pixers.pics/pho_wat(s3:700/FO/47/00/27/91/700_FO47002791_229d0889c8358f92e20f9eb97b1030be.jpg,700,687,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,480,637,jpg)/stickers-thumb-up-emoticon.jpg.jpg" alt="smiling thumbs up emoji" style="width:100%;"></p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque blandit dictum nunc nec euismod. Quisque dolor diam, condimentum non faucibus at, tincidunt vel nisl. Etiam vitae dui enim. Curabitur finibus sagittis erat, eu ullamcorper nulla sollicitudin sed. In ac dictum erat. Praesent libero urna, faucibus at nisl sed, blandit scelerisque magna. Fusce a nibh urna. Sed hendrerit congue nunc eu cursus. Sed et mattis metus, vel facilisis nunc. Aenean non enim sit amet nunc vestibulum lacini Sed eget elementum neque. Donec sed neque metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec tincidunt a elit et ornare. Duis id nisl vestibulum risus molestie commodo in sed magna. In sagittis luctus fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non nisl ut diam tempus tempor. Ut dapibus id purus id commodo. In tempor, risus vitae semper imperdiet, odio augue laoreet diam, ut tempus lorem lectus at neque. Sed at risus porttitor, feugiat enim sagittis, commodo arcu. Nam dictum eget ipsum sed elementum. Aliquam eu elit diam. Integer vel tincidunt mauris.</p>
     <p>And another one</p>
     <p>And another one but with a bit more writing and some more writing lalalalala</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque blandit dictum nunc nec euismod. Quisque dolor diam, condimentum non faucibus at, tincidunt vel nisl. Etiam vitae dui enim. Curabitur finibus sagittis erat, eu ullamcorper nulla sollicitudin sed. In ac dictum erat. Praesent libero urna, faucibus at nisl sed, blandit scelerisque magna. Fusce a nibh urna. Sed hendrerit congue nunc eu cursus. Sed et mattis metus, vel facilisis nunc. Aenean non enim sit amet nunc vestibulum lacini
       Sed eget elementum neque. Donec sed neque metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec tincidunt a elit et ornare. Duis id nisl vestibulum risus molestie commodo in sed magna. In sagittis luctus fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
       Quisque non nisl ut diam tempus tempor. Ut dapibus id purus id commodo. In tempor, risus vitae semper imperdiet, odio augue laoreet diam, ut tempus lorem lectus at neque. Sed at risus porttitor, feugiat enim sagittis, commodo arcu. Nam dictum eget ipsum sed elementum. Aliquam eu elit diam. Integer vel tincidunt mauris.</p>
-    <p><img src="https://static.vecteezy.com/system/resources/thumbnails/016/220/000/small_2x/hand-drawn-rose-line-art-drawing-images-illustration-collection-free-vector.jpg" alt="line art of black and white hand drawn rose" style="width:100%;"></p>
    
    <!-- Footer Back To Top Arrow -->
     <footer>
@@ -101,11 +127,13 @@
     <style>
       footer a img {
         position: fixed;
-        left: 8px;
-        top: 90%;
+        left: .5%;
         bottom: 0;
         width: 10%;
         padding: 10px;
+        width: 60px;
+        height: 60px;
+        border-radius: 30%;
       }
     </style>
   </footer>
