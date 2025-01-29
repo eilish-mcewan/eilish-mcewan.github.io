@@ -1,76 +1,47 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <title>Eilish's Blog</title>
     <style>
       body {
-        color: rgb(47, 54, 18);
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: x-large;
-        text-align: right;
+        color: rgb(67, 60, 56);
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: medium;
         margin-bottom: auto;
-        background-color: rgb(30, 22, 183);
+        background-color: rgb(148, 175, 180);
         background-size: cover;
-      }
-      nav {
-        background-color: rgb(255, 255, 255);
-        padding: 8px;
-        border-radius: 440%;
-      }
-      nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-      }
-      nav ul li {
-        display: inline;
-        margin-right: 10px;
-      }
-      nav ul li a {
-        text-decoration: none;
-        color: rgb(47, 54, 18);
-        font-family: Georgia, 'Times New Roman', Times, serif;
-      }
-      h1 {
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        color: rgb(57, 96, 48);
-        background-position: top right;
-        background-color: rgb(255, 255, 255);
-        display: inline;
-        padding: 1px;
-        z-index: 2;
-        border-radius: 45%;
-      }
-      p {
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        color: rgb(47, 54, 18);
-        text-align: center;
-        background-position: top center;
-        background-color: rgb(255, 255, 255);
-        padding: 6px;
-        border-radius: 0%;
-      }
+      } 
     </style>
-  </head>
-  <body>
-    <body id="top">
 
-      <h1>Eilish's Blog<style>
-        h1 {
+    
+    <!--Header Image-->
+    <div class="image">
+      <img
+        src="https://i.postimg.cc/W31W6Kdx/header.jpg"
+        alt="Drawn text saying Eilish's Blawg"
+      />
+
+      <style>
+        .image img {
+          right: 0;
+          margin-right: 10px;
+          margin-top: 10px;
+          width: 25%;
+          border-radius: 50%;
           position: fixed;
-          top: 2%;
-          left: 10%;
-          background-color: rgb(255, 255, 255);
-          padding: 8px;
-          font-size: 150%;
         }
-      </style></h1>
+      </style>
+    </div>
 
     <!-- Navigation bar -->
-    <nav>
+    <div class="sidenav">
       <ul>
+        <li>...</li>
+        <li>...</li>
         <li><a href="index.html">Home</a></li>
         <li><a href="/blog/te-houtaewa-template.html">Te Houtaewa</a></li>
         <li><a href="/blog/html-css.html">Positioning</a></li>
@@ -79,93 +50,153 @@
         <li><a href="blog/emotional-intelligence.html">Emotional Intelligence</a></li>
         <li><a href="/blog/javascript-dom.html">JS and the DOM</a></li>
       </ul>
-      <style>
-        nav{
-          position: fixed;
-          top: 1%;
-          font-size: medium;
-        }
-      </style>
-    </nav>
+    </div>
 
+    <!---Sidenav CSS-->
+    <style>
+      .sidenav {
+        height: 100%;
+        width: fit-content;
+        position: fixed;
+        width: 150px;
+        top: 0;
+        left: 0;
+        background-color: rgb(67, 60, 56);
+        border-color: rgb(244, 170, 182);
+        border-style:solid;
+        border-width: 4px;
+
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 250px;
+      }
+
+      li a {
+        display: block;
+        width: 100px;
+        padding: 10px 25px;
+        text-align: center;
+        margin-top: 7px;
+      }
+
+      .sidenav a {
+        font-size: 14px;
+        color: rgb(255, 165, 180);
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
 
     <!--Main Content + Grid-->
     <div class="flex-container">
       <style>
-        .flex-container {
-          display: flexbox
-          grid-gap: 5%;
-          padding: 5%;
-          margin-bottom: auto;
+            .flex-container {
+              display: flex;
+              grid-gap: 5%;
+              padding: 5%;
+              margin-bottom: auto;
+              flex-direction: column;
+              flex-wrap: wrap;
+              justify-content: center;
+              align-items: center;
+              width: 1000px;
+            }
+            .flex-item {
+              margin-top: 10%;
+              background-color: rgb(209, 227, 226);
+              border-right:groove;
+              border-top: solid;
+              border-color:rgb(244, 170, 182);
+              border-width: 10px;
+              text-align: left;
+              padding: 20px;
+              font-size: 70%;
+              flex: wrap;
+              width: 650px;
+            }
+        @media (max-width: 300px)
+          .flex-container {
+            flex-direction: column ;
         }
-        .flex-item {
-          margin-top: 10%;
-          background-color: rgb(255, 255, 255);
-          text-align: left;
-          padding: 20px;
-          font-size: 70%;
-          flex: 1 1 calc(33.333% - 20px);
-        }
-    @media (max-width: 768px) {
-      .flex-container {
-        flex: 1 1 calc(50% - 20px); 
-    }
-    @media (max-width: 480px) {
-      .flex-container {
-        flex: 1 1 100%; 
-      }
-      </style></div>
+      </style>
+    </div>
 
-    <!--Main Content--> 
+    <!--Posts--!>
+
     <div class="flex-container">
       <div class="flex-item">
         Te Houtaewa was the fastest runner of his day and played many pranks on
-      his peoples enemies. One morning his mother wanted kumara for the hangi
-      (earth oven) and asked Te Houtaewa to go to the gardens at Te Kao, a short
-      distance away. He agreed to fetch the kumara and told his mother to
-      prepare the hangi.  Instead of going to the nearby gardens, Te Houtaewa set off for Ahipara as
-      he wanted to annoy some Te Rarawa people who lived there. Carrying two
-      large baskets for the kumara, he ran like the wind, completing the journey
-      over the hard sands of Te Oneroa a Tohe (Ninety Mile Beach) in the few
-      hours it takes a good hangi to heat up properly<a href="/blog/te-houtaewa-template.html">... Read more</a></div>
-        
-      <div class="flex-item">
-        A 'position' is a property in CSS that defines how the element interacts with the page. Relative, absolute, and fixed Positioning
-        are important to understand because they can be really useful when you want to move or static-ify elements on a page.
-
-        Let's start with relative positioning. If I have an image at the top of my webpage and I scroll, the image will not be lost
-        into the scroll multiverse. That is to say that it won't disappear once you scroll down. You can also add fancy properties
-        to place the component exactly where you want relative to its original position in the document flow.
-
-        Absolute positioning is a bit different. It's literally a post-it for your computer screen. You can position it anywhere you want and it'll just stay there. BUT it is dependent on the placement of its closest ancestor.
-        It's kind of like an anchor on a ship. Wherever it goes, it's attached to the ship. If the ship doesn't swim down the page, neither does the anchor (oh no this analogy is not going well) but if the ship DOES swim down the page, so does the anchor. Wow, that was a informative.
-        Relative positioning is absolute positioning's subtler counterpart. If absolute positioning wore Jil Sander, relative positioning would wear Rick Owens<a href="/blog/html-css.html">... Read more</a>
-      </div>	
-        <div class="flex-item">
-          And another one</div>
-        <div class="flex-item">
-          And another one but with a bit more writing and some more writing lalalalala</div>
-        <div class="flex-item">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque blandit dictum nunc nec euismod. Quisque dolor diam, condimentum non faucibus at, tincidunt vel nisl. Etiam vitae dui enim. Curabitur finibus sagittis erat, eu ullamcorper nulla sollicitudin sed. In ac dictum erat. Praesent libero urna, faucibus at nisl sed, blandit scelerisque magna. Fusce a nibh urna. Sed hendrerit congue nunc eu cursus. Sed et mattis metus, vel facilisis nunc. Aenean non enim sit amet nunc vestibulum lacini
-          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec tincidunt a elit et ornare. Duis id nisl vestibulum risus molestie commodo in sed magna. In sagittis luctus fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</div>
+        his peoples enemies. One morning his mother wanted kumara for the hangi
+        (earth oven) and asked Te Houtaewa to go to the gardens at Te Kao, a
+        short distance away. He agreed to fetch the kumara and told his mother
+        to prepare the hangi. Instead of going to the nearby gardens, Te
+        Houtaewa set off for Ahipara as he wanted to annoy some Te Rarawa people
+        who lived there. Carrying two large baskets for the kumara, he ran like
+        the wind, completing the journey over the hard sands of Te Oneroa a Tohe
+        (Ninety Mile Beach) in the few hours it takes a good hangi to heat up
+        properly<a href="/blog/te-houtaewa-template.html"> ... Read more</a>
       </div>
+      <div class="flex-item">
+        A 'position' is a property in CSS that defines how the element interacts
+        with the page. Relative, absolute, and fixed Positioning are important
+        to understand because they can be really useful when you want to move or
+        static-ify elements on a page. Let's start with relative positioning. If
+        I have an image at the top of my webpage and I scroll, the image will
+        not be lost into the scroll multiverse. That is to say that it won't
+        disappear once you scroll down. You can also add fancy properties to
+        place the component exactly where you want relative to its original
+        position in the document flow. Absolute positioning is a bit different.
+        It's literally a post-it for your computer screen. You can position it
+        anywhere you want and it'll just stay there. BUT it is dependent on the
+        placement of its closest ancestor. It's kind of like an anchor on a
+        ship. Wherever it goes, it's attached to the ship. If the ship doesn't
+        swim down the page, neither does the anchor (oh no this analogy is not
+        going well) but if the ship DOES swim down the page, so does the anchor.
+        Wow, that was a informative. Relative positioning is absolute
+        positioning's subtler counterpart. If absolute positioning wore Jil
+        Sander, relative positioning would wear Rick Owens<a
+          href="/blog/html-css.html"
+          > ... Read more</a>
+       </div>
+       <div class="flex-item">And another one</div>
+       <div class="flex-item">
+        And another one but with a bit more writing and some more writing
+        lalalalala
+       </div>
+       <div class="flex-item">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque blandit
+        dictum nunc nec euismod. Quisque dolor diam, condimentum non faucibus
+        at, tincidunt vel nisl. Etiam vitae dui enim. Curabitur finibus sagittis
+        erat, eu ullamcorper nulla sollicitudin sed. In ac dictum erat. Praesent
+        libero urna, faucibus at nisl sed, blandit scelerisque magna. Fusce a
+        nibh urna. Sed hendrerit congue nunc eu cursus. Sed et mattis metus, vel
+        facilisis nunc. Aenean non enim sit amet nunc vestibulum lacini Class
+        aptent taciti sociosqu ad litora torquent per conubia nostra, per
+        inceptos himenaeos. Donec tincidunt a elit et ornare. Duis id nisl
+        vestibulum risus molestie commodo in sed magna. In sagittis luctus
+        fermentum. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas.
+      </div>
+    </div>
 
-
-   <!-- Footer Back To Top Arrow -->
-    <footer>
-    <a href="#top"><img src="https://previews.123rf.com/images/saphatthachat/saphatthachat1809/saphatthachat180900046/110272342-vector-pixel-art-arrow-raise-isolated-cartoon.jpg"><style></style></a>
+    <!--Footer-->
+    <div class="footer">
+    <a href="#top" class="footer">
+    <img src="https://i.postimg.cc/XYX9LbLf/footer.jpg" /></a>
+    
     <style>
-      footer a img {
-        position: fixed;
-        left: .1%;
-        bottom: 1%;
-        width: 10%;
-        padding: 10px;
-        width: 60px;
-        height: 60px;
-        border-radius: 30%;
-      }
+    .footer img {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      width: 8%;
+      border-radius: 50%;
+    }
     </style>
-  </footer>
+    </div>
   </body>
 </html>
