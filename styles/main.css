@@ -43,7 +43,7 @@ h2 {
   text-align: left;
   font-size: 80%;
   flex: 1 1 calc(33.333% - 20px);
-  width: 40%;
+  width: 60%;
   flex: none;
   align-items: baseline;
 }
