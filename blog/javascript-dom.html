@@ -1,88 +1,63 @@
 <!DOCTYPE html>
 <html>
-  <head></head>
+  <head>
     <title>JavaScript and the DOM</title>
-    <meta charset="UTF-8" />
     <link href="../styles/main.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <style>
-      body {
-        color: rgb(47, 54, 18);
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        text-align: left;
-        padding: 30px;
-        border-style: solid;
-        border-radius: 50%;
-        border-color: rgb(0, 0, 0);
-      }
-    </style>
-
     <!--Main Content-->
 
-    <h1>JavaScript and the DOM</h1>
+    <h2>JavaScript and the DOM</h2>
 
-    <p>
+    <div class="flex-container">
+      <div class="flex-item">
        If CSS is the peanut butter and jelly, and HTML is the bread, JavaScript is your knife and fork. Another great analogy, 
        because you would totally use a knife and fork to cut a pb&j sandwich. But anyway, right now we're in an analogy with 
-       a weird person who cuts their sandwiches with a knife and fork.</p>
+       a weird person who cuts their sandwiches with a knife and fork.</div>
       <p></p>
-       <p>JS (JavaScript) gives the code MOTION. HTML contains a bunch of static components, JS can turn them into static elements 
+      <div class="flex-item">JS (JavaScript) gives the code MOTION. HTML contains a bunch of static components, JS can turn them into static elements 
        with areas that have MOTION. That are alive and beating. CSS can only make stuff look pretty, JavaScript makes a website 
-       or app compelling and worth talking about.</p>
+       or app compelling and worth talking about.</div>
       <p></p>
-       <p>Something that's hard af about JavaScript is Loops. Loops loops loops. My nemesis. A loop is like drinking a nice, hot coffee. 
+      <div class="flex-item">Something that's hard af about JavaScript is Loops. Loops loops loops. My nemesis. A loop is like drinking a nice, hot coffee. 
        Except way less pleasant. Basically if I were to drink a coffee, I'd drink it in the same way again and again until the coffee 
        is finished. That's basically what looping does. The i or Iterator counts how many times it has gone through the loop, and it keeps 
        counting until it meets the constraints you give it. Most loops end in the same way with i++, which basically just means 
        the loop keeps going until it's told to stop. Once the rules are set for the iterator we give it a function, the function in 
        our analogy would be to drink the coffee. Within the "for" brackets we would set a rule that tells the Iterator (you, I, whoever) to keep 
        sipping until there's nothing left. At the same time, for some reason, I'm also counting how many times I've sipped because 
-       normally it takes me 20 sips to finish a coffee. Or something like that.</p>
+       normally it takes me 20 sips to finish a coffee. Or something like that.</div>
        <p></p>
-       <p>Here is a loop if we used the analogy.
+       <div class="flex-item">Here is a loop if we used the analogy.
         for (let YOU DRINK = I'M COUNTING; YOU DRINK = THE SIZE OF THE COFFEE; i++), then below that code there would be an area which i do not completely understand yet. But if 
         we're using the coffee analogy it would do something like tell the function to search the your brain (or the HTML) for signals that you want to drink a coffee.
-       </p>
+       </div>
        <p></p>
-       <p>The DOM is what happens when you press F12 on the keyboard. In the SIMPLEST way possible, that area that appears in the browser 
+       <div class="flex-item">The DOM is what happens when you press F12 on the keyboard. In the SIMPLEST way possible, that area that appears in the browser 
         is the DOM. You can use it to test stuff in the browser, see what your JS code is doing, search for elements to target 
-        with your JS code, and it will even tell you what errors can be found in your code.
+        with your JS code, and it will even tell you what errors can be found in your code.</div>
         <p></p>
-        <p>Editors Note: I haven't discussed the difference between objects and arrays, but I'm going to do a full refactor 27/01/2025 and complete this blog.</p>
+        <div class="flex-item">Editors Note: I haven't discussed the difference between objects and arrays, but I'm going to do a full refactor 27/01/2025 and complete this blog.</div>
 
 
-    </p>
 
-    <nav>
+    <div class="sidenav">
       <ul>
         <li><a href="/index.html">Home</a></li>
         <li><a href="/blog/te-houtaewa-template.html">Te Houtaewa</a></li>
         <li><a href="/blog/html-css.html">Positioning</a></li>
         <li><a href="/blog/identity-values.html">Identity Values</a></li>
         <li><a href="/blog/learning-plan.html">Learning Plan</a></li>
-        <li><a href="/blog/emotional-intelligence.html">Emotional Intelligence</a></li>
+        <li><a href="/blog/emotional-intelligence.html">Emotional Intelligence</a></li>  
+        <li><a href="/blog/javascript-dom.html">JS and the DOM</a></li>
       </ul>
-      <style>
-        nav{
-          position: relative;
-          top: 1%;
-
-        }
-      </style>
-    </nav>
-
-    <!--Home-->
-    <a href="../index.html"><style>
-       a{
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        color: antiquewhite
-      }
-    </style>Back to Home</a>
+      </div>
 
     <!-- Footer Back To Top Arrow -->
-    <footer>
-      <a href="#top"><img src="https://previews.123rf.com/images/saphatthachat/saphatthachat1809/saphatthachat180900046/110272342-vector-pixel-art-arrow-raise-isolated-cartoon.jpg" /></a>
-    </footer>
+    <div class="footer">
+      <a href="#top" class="footer">
+        <img src="https://i.postimg.cc/XYX9LbLf/footer.jpg"
+      /></a>
+    </div>
   </body>
 </html>

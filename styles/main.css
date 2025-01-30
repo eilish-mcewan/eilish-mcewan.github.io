@@ -1,23 +1,3 @@
-/* widescreen displays */
-@media only screen and (min-width: 920px) {
-  .container {
-    /* some layout rules */
-  }
-}
-
-/* tablets */
-@media only screen and (max-width: 919px) {
-  .container {
-    /* some layout rules */
-  }
-}
-
-/* phones */
-@media only screen and (max-width: 400px) {
-  .container {
-    /* some layout rules */
-  }
-}
 body {
   color: rgb(67, 60, 56);
   font-family: Arial, Helvetica, sans-serif;
@@ -27,7 +7,7 @@ body {
 }
 h2 {
   font-family: Arial, Helvetica, sans-serif;
-  color:rgb(67, 60, 56);
+  color: rgb(67, 60, 56);
   display: block;
   text-align: center;
   margin: 0;
@@ -49,31 +29,35 @@ h2 {
   justify-content: center;
   align-items: center;
   width: 1000px;
+  max-width: 1024px;
+  min-width: 500px;
 }
 .flex-item {
   margin-top: 10%;
   background-color: rgb(209, 227, 226);
-  border-right:groove;
+  border-right: groove;
   border-top: solid;
-  border-color:rgb(244, 170, 182);
+  border-color: rgb(244, 170, 182);
   border-width: 10px;
   padding: 20px;
   text-align: left;
-  font-size: 70%;
+  font-size: 80%;
   flex: 1 1 calc(33.333% - 20px);
-  width: 650px;
+  width: 40%;
+  flex: none;
+  align-items: baseline;
 }
 
 .sidenav {
   height: 100%;
   width: fit-content;
   position: fixed;
-  width: 150px;
+  width: 125px;
   top: 0;
   left: 0;
   background-color: rgb(67, 60, 56);
   border-color: rgb(244, 170, 182);
-  border-style:solid;
+  border-style: solid;
   border-width: 4px;
 }
 
@@ -87,26 +71,16 @@ ul {
 li a {
   display: block;
   width: 100px;
-  padding: 10px 25px;
+  padding: 6px 6px;
   text-align: center;
   margin-top: 7px;
 }
 
 .sidenav a {
-  font-size: 14px;
+  font-size: 15px;
   color: rgb(255, 165, 180);
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
-}
-@media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav ul li {
-    margin-bottom: 10px;
-  }
 }
 
 .image img {
@@ -124,12 +98,3 @@ li a {
   width: 8%;
   border-radius: 50%;
 }
-
-@media (max-width: 500px) {
-  .flex-container {
-  flex: 1 1 calc(50% - 20px);
-  }
-  @media (max-width: 500px) {
-  .flex-container {
-  flex: 1 1 100%;
-  }

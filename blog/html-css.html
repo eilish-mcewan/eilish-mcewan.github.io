@@ -1,54 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head></head>
+  <head>
     <title>Relative, Absolute, and Fixed Positioning</title>
-    <meta charset="UTF-8" />
     <link href="../styles/main.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <style>
-      body {
-        color: rgb(47, 54, 18);
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        text-align: left;
-        padding: 30px;
-        border-style: solid;
-        border-radius: 50%;
-        border-color: rgb(0, 0, 0);
-      }
-    </style>
 
     <!--Main Content-->
-
-    <h1>Relative, Absolute, and Fixed Positioning</h1>
-    <h2>What's the Difference?<style>
-      h2 {
-        color:rgb(218, 219, 221)
-      }
-    </style></h2>
-
-    <p>
+    <div class = "flex-container">
+      <div class="flex-item">
       A 'position' is a property in CSS that defines how the element interacts with the page. Relative, absolute, and fixed Positioning
       are important to understand because they can be really useful when you want to move or static-ify elements on a page.
-    </p>
-    <p>
+      </div>
+    <div class="flex-item">
       Let's start with relative positioning. If I have an image at the top of my webpage and I scroll, the image will not be lost
       into the scroll multiverse. That is to say that it won't disappear once you scroll down. You can also add fancy properties
       to place the component exactly where you want relative to its original position in the document flow.
-    </p>
-    <p> 
+    </div>
+    <div class="flex-item">
       Absolute positioning is a bit different. It's literally a post-it for your computer screen. You can position it anywhere you want and it'll just stay there. BUT it is dependent on the placement of its closest ancestor.
       It's kind of like an anchor on a ship. Wherever it goes, it's attached to the ship. If the ship doesn't swim down the page, neither does the anchor (oh no this analogy is not going well) but if the ship DOES swim down the page, so does the anchor. Wow, that was a informative.
       Relative positioning is absolute positioning's subtler counterpart. If absolute positioning wore Jil Sander, relative positioning would wear Rick Owens.
-    </p>
-    <p>
+    </div>
+    <div class="flex-item">
       Fixed positioning is when the component is fixed to the viewport. It doesn't depend on its closest ancestor for placement like absolute positioning.
-    </p>
-    <p>
+    </div>
+    <div class="flex-item">
       In conclusion, I'm still confused. But SLIGHTLY less so.
-    </p>
+    </div>
 
-    <nav>
+    <div class ="sidenav">
       <ul>
         <li><a href="/index.html">Home</a></li>
         <li><a href="/blog/te-houtaewa-template.html">Te Houtaewa</a></li>
@@ -58,26 +39,13 @@
         <li><a href="/blog/emotional-intelligence.html">Emotional Intelligence</a></li>
         <li><a href="/blog/javascript-dom.html">JS and the DOM</a></li>
       </ul>
-      <style>
-        nav{
-          position: relative;
-          top: 1%;
-
-        }
-      </style>
-    </nav>
-
-    <!--Home-->
-    <a href="../index.html"><style>
-       a{
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        color: antiquewhite
-      }
-    </style>Back to Home</a>
+    </div>
 
     <!-- Footer Back To Top Arrow -->
-    <footer>
-      <a href="#top"><img src="https://previews.123rf.com/images/saphatthachat/saphatthachat1809/saphatthachat180900046/110272342-vector-pixel-art-arrow-raise-isolated-cartoon.jpg" /></a>
-    </footer>
+    <div class="footer">
+      <a href="#top" class="footer">
+        <img src="https://i.postimg.cc/XYX9LbLf/footer.jpg"
+      /></a>
+    </div>
   </body>
 </html>

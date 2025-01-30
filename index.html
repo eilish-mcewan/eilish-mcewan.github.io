@@ -1,131 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
     <title>Eilish's Blog</title>
-    <style>
-      body {
-        color: rgb(67, 60, 56);
-        font-family:Arial, Helvetica, sans-serif;
-        font-size: medium;
-        margin-bottom: auto;
-        background-color: rgb(148, 175, 180);
-        background-size: cover;
-      } 
-    </style>
+  </head>
 
-    
+  <body>
     <!--Header Image-->
     <div class="image">
       <img
         src="https://i.postimg.cc/W31W6Kdx/header.jpg"
         alt="Drawn text saying Eilish's Blawg"
       />
-
-      <style>
-        .image img {
-          right: 0;
-          margin-right: 10px;
-          margin-top: 10px;
-          width: 25%;
-          border-radius: 50%;
-          position: fixed;
-        }
-      </style>
     </div>
 
     <!-- Navigation bar -->
+    <div class="container">
     <div class="sidenav">
       <ul>
-        <li>...</li>
-        <li>...</li>
         <li><a href="index.html">Home</a></li>
         <li><a href="/blog/te-houtaewa-template.html">Te Houtaewa</a></li>
         <li><a href="/blog/html-css.html">Positioning</a></li>
         <li><a href="/blog/identity-values.html">Identity Values</a></li>
         <li><a href="/blog/learning-plan.html">Learning Plan</a></li>
-        <li><a href="blog/emotional-intelligence.html">Emotional Intelligence</a></li>
+        <li>
+          <a href="blog/emotional-intelligence.html">Emotional Intelligence</a>
+        </li>
         <li><a href="/blog/javascript-dom.html">JS and the DOM</a></li>
       </ul>
     </div>
-
-    <!---Sidenav CSS-->
-    <style>
-      .sidenav {
-        height: 100%;
-        width: fit-content;
-        position: fixed;
-        width: 150px;
-        top: 0;
-        left: 0;
-        background-color: rgb(67, 60, 56);
-        border-color: rgb(244, 170, 182);
-        border-style:solid;
-        border-width: 4px;
-
-      }
-
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        width: 250px;
-      }
-
-      li a {
-        display: block;
-        width: 100px;
-        padding: 10px 25px;
-        text-align: center;
-        margin-top: 7px;
-      }
-
-      .sidenav a {
-        font-size: 14px;
-        color: rgb(255, 165, 180);
-        text-decoration: none;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-    </style>
-
-    <!--Main Content + Grid-->
-    <div class="flex-container">
-      <style>
-            .flex-container {
-              display: flex;
-              grid-gap: 5%;
-              padding: 5%;
-              margin-bottom: auto;
-              flex-direction: column;
-              flex-wrap: wrap;
-              justify-content: center;
-              align-items: center;
-              width: 1000px;
-            }
-            .flex-item {
-              margin-top: 10%;
-              background-color: rgb(209, 227, 226);
-              border-right:groove;
-              border-top: solid;
-              border-color:rgb(244, 170, 182);
-              border-width: 10px;
-              text-align: left;
-              padding: 20px;
-              font-size: 70%;
-              flex: wrap;
-              width: 650px;
-            }
-        @media (max-width: 300px)
-          .flex-container {
-            flex-direction: column ;
-        }
-      </style>
-    </div>
-
-    <!--Posts--!>
 
     <div class="flex-container">
       <div class="flex-item">
@@ -160,14 +63,16 @@
         positioning's subtler counterpart. If absolute positioning wore Jil
         Sander, relative positioning would wear Rick Owens<a
           href="/blog/html-css.html"
-          > ... Read more</a>
-       </div>
-       <div class="flex-item">And another one</div>
-       <div class="flex-item">
+        >
+          ... Read more</a
+        >
+      </div>
+      <div class="flex-item">And another one</div>
+      <div class="flex-item">
         And another one but with a bit more writing and some more writing
         lalalalala
-       </div>
-       <div class="flex-item">
+      </div>
+      <div class="flex-item">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque blandit
         dictum nunc nec euismod. Quisque dolor diam, condimentum non faucibus
         at, tincidunt vel nisl. Etiam vitae dui enim. Curabitur finibus sagittis
@@ -185,18 +90,9 @@
 
     <!--Footer-->
     <div class="footer">
-    <a href="#top" class="footer">
-    <img src="https://i.postimg.cc/XYX9LbLf/footer.jpg" /></a>
-    
-    <style>
-    .footer img {
-      position: fixed;
-      bottom: 10px;
-      right: 10px;
-      width: 8%;
-      border-radius: 50%;
-    }
-    </style>
+      <a href="#top" class="footer">
+        <img src="https://i.postimg.cc/XYX9LbLf/footer.jpg"
+      /></a>
     </div>
   </body>
 </html>
