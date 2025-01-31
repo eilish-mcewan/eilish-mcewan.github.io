@@ -41,9 +41,9 @@ h2 {
   border-width: 10px;
   padding: 20px;
   text-align: left;
-  font-size: 80%;
+  font-size: 100%;
   flex: 1 1 calc(33.333% - 20px);
-  width: 60%;
+  width: 70%;
   flex: none;
   align-items: baseline;
 }
